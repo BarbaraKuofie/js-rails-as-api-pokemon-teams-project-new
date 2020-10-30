@@ -63,7 +63,9 @@ function renderSinglePokemon(pokemon, ul){
            } 
             fetch(`${POKEMONS_URL}/${pokemon.id}`, reqObj)
             .then(resp => console.log(resp))
-            .then(function(json) { e.target.parentNode.remove() })
+            .then(function(json) {  
+                e.target.parentNode.remove()
+            })
         })
         ul.appendChild(li)
 }
